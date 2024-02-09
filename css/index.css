@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #111729;
+    height: 100vh;
+    margin: 0 65px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+
+
+.hide {
+    display: none !important;
+}
+
+.qr__generator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.bg__illustration {
+    position: absolute;
+    top: 65px;
+    width: 40%;
+    right: 0;
+    z-index: -1;
+}
+
+.logo__qr__generator {
+    padding: 10px;
+
+}
+
+.qr__input {
+    padding: 15px 20px;
+    width: 80%;
+    border-radius: 10px;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+
+}
+
+.qr__input::placeholder {
+    font-size: 12px;
+    color: #364153;
+}
+
+.qr__group__input__generate {
+    width: 50%;
+    background-color: #030617;
+    border: 2px solid #3662E3;
+    display: flex;
+    padding: 5px;
+    border-radius: 10px;
+    z-index: 2000;
+}
+
+.qr_btn {
+    width: 120px;
+    color: #fff;
+    background-color: #3662E3;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 15px 20px;
+}
+
+.qr_btn:hover {
+    background-color: #3661e3a4;
+}
+
+.qr__result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.qr__container {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: #030617;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr {
+    background-color: #F2F5F9;
+    border-radius: 20px;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr__options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.qr__options>button>img {
+    color: #F2F5F9;
+}
+
+@media screen and (max-width:640px) {
+    
+    .qr__group__input__generate{
+        width: 100%;
+    }
+    body {
+        margin: 0 32.5px;
+    }
+
+    .bg__illustration {
+        width: 100%;
+        height: 85%;
+        top: 65px;
+        left: 200px;
+    }
+}

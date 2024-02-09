@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR CODE GENERATOR </title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+
+
+    <div class="qr__generator" id="qr-generator">
+        <img src="./img/logo-qr-generator.svg" alt="Logo QR" class="logo__qr__generator">
+        <div class="qr__group__input__generate">
+            <input type="text" class="qr__input" placeholder="Enter an url" id="url" >
+            <button class="qr_btn" id="qr-btn" >QR code</button>
+        </div>
+
+    </div>
+    <div class="qr__result hide" id="qr-result">
+        <div class="qr__container">
+            <div class="qr" id="container-qr-generate">
+
+            </div>
+        </div>
+        <div class="qr__options">
+            <button class="qr_btn" id="qr-btn-download" title="Download">Download <img src="./img/download-minimalistic-svgrepo-com.svg" alt=""> </button>
+            <button class="qr_btn" id="qr-btn-share" title="Copy image to clipboard">Share <img src="./img/link-svgrepo-com.svg"></button>
+        </div>
+
+    </div>
+
+    <div class="result">
+
+    </div>
+    <img src="./img/bg-illustration.svg" alt="BACKGROUND ILLUSTRATION" class="bg__illustration">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+        integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+
+
+</html>
