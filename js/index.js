@@ -1,7 +1,8 @@
 
 let containerQrGenerate = document.getElementById('container-qr-generate')
 let qrResult = document.getElementById('qr-result')
-let qrGenerator = document.getElementById('qr-generator')
+let qrGroupInputGenerate = document.getElementById('qr-group-input-generate')
+let logoQrGenerator = document.getElementById('logo-qr-generator')
 let  qrBtn = document.getElementById('qr-btn')
 let  qrBtnDownload = document.getElementById('qr-btn-download')
 let  qrBtnShare = document.getElementById('qr-btn-share')
@@ -19,7 +20,8 @@ qrBtn.addEventListener('click',function(){
     }
     )
     qrResult.classList.remove('hide')
-    qrGenerator.classList.add('hide')
+    qrGroupInputGenerate.classList.add('hide')
+    logoQrGenerator.classList.add('change__position__logo__qr__generator')
 })
 qrBtnDownload.addEventListener('click',function(){
     let qrCodeURL = document.querySelector("#container-qr-generate img").src;
